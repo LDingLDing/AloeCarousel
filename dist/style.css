@@ -1,0 +1,124 @@
+/*
+	@description: Carousel Base Style
+	@author:      aloe(liluhui)
+	@date         2016/04/28
+ */
+.aloeCarousel {
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  zoom: 1; }
+  .aloeCarousel .show-cards {
+    width: 10000px;
+    *zoom: 1; }
+    .aloeCarousel .show-cards:after {
+      content: "";
+      clear: both;
+      display: block;
+      height: 0; }
+  .aloeCarousel .show-card {
+    float: left;
+    _display: inline; }
+
+.carousel-control {
+  overflow: height;
+  zoom: 1; }
+  .carousel-control .carousel-anchor {
+    display: block;
+    _display: inline;
+    float: left; }
+
+/*
+    @description: Custom Style
+	@author:      aloe(liluhui)
+	@date         2016/04/28
+ */
+body {
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  text-align: center;
+  color: #34495E; }
+
+.container1 {
+  margin: 0 auto;
+  width: 803px; }
+  .container1 .show-card {
+    border: 1px solid #D4E4EC;
+    width: 400px;
+    height: 210px;
+    margin-left: -1px; }
+    .container1 .show-card:nth-child(2n+1) {
+      margin-left: 0; }
+  .container1 .imgbox {
+    width: 100px;
+    height: 90%;
+    float: right;
+    margin: 10px;
+    _display: inline; }
+    .container1 .imgbox img {
+      width: 100%;
+      height: 100%; }
+  .container1 .contentbox {
+    float: left;
+    font-size: 60px;
+    line-height: 210px;
+    text-align: center;
+    font-weight: 700px;
+    color: #1ABC9C;
+    width: 280px; }
+
+.container2 {
+  margin: 0 auto;
+  margin-bottom: 50px; }
+
+.carousel-control .carousel-anchor {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #BAC4C5;
+  margin: 10px; }
+
+.carousel-control .carousel-anchor-active {
+  background: #1ABC9C;
+  transition: background 0.5s; }
+  .carousel-control .carousel-anchor-active:hover {
+    background: #1ABC9C; }
+
+.pagedown {
+  position: absolute;
+  background: #000;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  height: 354px;
+  width: 64px;
+  transition: all 0.5s;
+  z-index: 333;
+  cursor: default; }
+
+.pagedown:hover {
+  opacity: 0.2;
+  filter: alpha(opacity=20); }
+
+.pagedown-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background: url("../img/pagedown.png") no-repeat;
+  margin-top: 146px;
+  cursor: pointer; }
+
+.pagedown-right {
+  right: 0; }
+  .pagedown-right .pagedown-icon {
+    background-position: -256px 0; }
+    .pagedown-right .pagedown-icon:hover {
+      background-position: -192px 0; }
+
+.pagedown-left {
+  left: 0; }
+  .pagedown-left .pagedown-icon {
+    background-position: -64px 0; }
+    .pagedown-left .pagedown-icon:hover {
+      background-position: -0 0; }

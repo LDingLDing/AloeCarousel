@@ -1,0 +1,44 @@
+/*
+	@description: Carousel Base Style
+	@author:      aloe(liluhui)
+	@date         2016/04/28
+ */
+
+$hack_ie6:'_';
+@mixin opacity($opacity:1) {
+  opacity: $opacity;
+  filter: alpha(opacity=$opacity*100);
+}
+
+.aloeCarousel {
+	position:relative;
+	width:0; 
+	overflow: hidden;
+	zoom: 1;
+	.show-cards {
+		width:10000px;
+		*zoom:1;
+		&:after {
+			content: "";
+			clear:both;
+			display:block;
+			height:0;
+		}
+	}
+	.show-card {
+		float:left;
+		#{$hack_ie6}display:inline;
+	}
+}
+
+// anchor
+.carousel-control {
+	overflow:height;
+	zoom: 1;
+	.carousel-anchor{
+		display:block;
+		#{$hack_ie6}display: inline;
+		float:left;
+	}
+	.carousel-anchor-active{}
+}

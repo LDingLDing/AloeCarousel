@@ -1,0 +1,115 @@
+/*
+    @description: Custom Style
+	@author:      aloe(liluhui)
+	@date         2016/04/28
+ */
+
+body {
+  padding: 0;
+  margin: 0; 
+}
+h1 {
+	text-align: center;
+	color: #34495E;
+}
+
+// container
+.container1 {
+	margin: 0 auto;
+	// padding-left:1px;
+	width:803px;
+	.show-card {
+		border:1px solid #D4E4EC;
+		width:400px;
+		height:210px;
+		margin-left:-1px;
+		&:nth-child(2n+1) {
+			margin-left:0;
+		}
+	}
+	.imgbox {
+		width:100px;
+		height:90%;
+		float:right;
+		margin:10px;
+		_display:inline;
+		img {
+			width:100%;
+			height:100%;
+		}
+	}
+	.contentbox {
+		float:left;
+		font-size:60px;
+		line-height:210px;
+		text-align:center;
+		font-weight:700px;
+		color:#1ABC9C;
+		width:280px;
+	}
+}
+.container2 {
+	margin:0 auto;
+	margin-bottom:50px;
+}
+
+
+//  anchor
+.carousel-control {
+	.carousel-anchor{
+		width: 20px;
+		height:20px;
+		border-radius:10px;
+		background:#BAC4C5;
+		margin:10px;
+	}
+	.carousel-anchor-active{
+		background:#1ABC9C;
+		transition:background 0.5s;
+		&:hover {
+			background:#1ABC9C;
+		}
+	}
+}
+
+
+// pagedown
+.pagedown {
+	position: absolute;
+	background: #000;
+	@include opacity(0);
+	height:354px;
+	width:64px;
+	transition:all 0.5s;
+	z-index:333;
+	cursor:default;
+}
+.pagedown:hover{
+	@include opacity(0.2);
+}
+.pagedown-icon {
+	display:block;
+	width:64px;
+	height:64px;
+	background:url('../img/pagedown.png') no-repeat;
+	margin-top:146px;
+	cursor:pointer;
+}
+.pagedown-right{
+	right:0;
+	.pagedown-icon{
+		background-position:-256px 0;
+		&:hover {
+			background-position:-192px 0;
+		}
+	}
+}
+.pagedown-left{
+	left:0;
+	.pagedown-icon {
+		background-position:-64px 0;
+		&:hover {
+			background-position:-0 0;
+		}
+	}
+}
