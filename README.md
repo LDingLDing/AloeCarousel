@@ -6,6 +6,10 @@
 
 ![兼容全平台](http://www.jq22.com/img/6.png)
 
+欢迎wiki和邮件联系，相互交流学习。
+
+邮箱: llh@betahouse.us
+
 * * *
 
 ![飞信截图20160429133108.png](https://ooo.0o0.ooo/2016/04/29/5722f2b9463ba.png)
@@ -58,7 +62,7 @@
             <span class="hljs-class">.show-card</span> (条目)
             <span class="hljs-class">.show-card</span> (条目)
             <span class="hljs-class">.show-card</span> (条目)
-        <span class="hljs-class">.carousel-control</span> (锚点容器，里面的内容自动生成)
+            <span class="hljs-class">.carousel-control</span> (锚点容器，里面的内容自动生成)
             <span class="hljs-comment">//.carousel-anchor-active (当前锚点)</span>
             <span class="hljs-comment">//.carousel-anchor (锚点)</span>
             <span class="hljs-comment">//.carousel-anchor (锚点) </span>
